@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.alta</groupId>
-	<artifactId>ecommerce-app</artifactId>
+	<artifactId>ecommerce-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>ecommerce-app</name>
+	<name>ecommerce-api</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>22</java.version>

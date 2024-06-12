@@ -1,6 +1,6 @@
-# ECommerce App
+# ECommerce API
 
-A Java-based eCommerce application providing a robust platform for managing products, users, and orders. This application leverages Spring Boot, and MySQL to create a scalable and maintainable solution.
+The ECommerce API is a RESTful web service built with Java to manage an e-commerce platform. It allows for handling products, orders, customers, and payments efficiently. The API supports CRUD operations and provides endpoints for various functionalities essential for an e-commerce application.
 
 ## Table of Contents
 
@@ -25,14 +25,14 @@ A Java-based eCommerce application providing a robust platform for managing prod
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/BAGIR3008/ECommerce-App-Java.git
-   cd ecommerce-app
+   git clone https://github.com/BAGIR3008/ECommerce-Api-Java.git
+   cd ecommerce-api
    ```
 
 2. Set up the database
    - Create a MySQL database:
       ```sql
-      CREATE DATABASE db_ecommerce_app;
+      CREATE DATABASE db_ecommerce_api;
       ```
    - Update the application.properties file with your MySQL database credentials.
 
@@ -50,8 +50,8 @@ A Java-based eCommerce application providing a robust platform for managing prod
 Update `src/main/resources/application.properties` with your database configurations and any other necessary settings.
 
 ```properties
-spring.application.name=ecommerce-app
-spring.datasource.url=jdbc:mysql://localhost:3306/db_ecommerce_app
+spring.application.name=ecommerce-api
+spring.datasource.url=jdbc:mysql://localhost:3306/db_ecommerce_api
 spring.datasource.username=root
 spring.datasource.password=
 spring.datasource.type=com.zaxxer.hikari.HikariDataSource
