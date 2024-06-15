@@ -21,6 +21,6 @@ public class ErrorController {
     public ResponseEntity<WebResponse<String>> apiException(ResponseStatusException exception){
         return ResponseEntity.status(exception.getStatusCode())
                 .body(WebResponse.<String>builder()
-                        .message(exception.getMessage()).build());
+                        .message(exception.getReason()).build());
     }
 }
