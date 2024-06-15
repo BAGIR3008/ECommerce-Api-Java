@@ -1,7 +1,5 @@
 package com.alta.ecommerce_api.entity;
 
-import java.util.List;
-
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -13,17 +11,20 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "users")
-public class User {
+@Table(name = "products")
+public class Product {
     @Id
     private String id;
 
     private String name;
 
-    private String email;
+    private String description;
 
-    private String password;
+    private double price;
 
-    @OneToMany(mappedBy = "user")
-    private List<Product> products;
+    private int stock;
+
+    @ManyToOne
+    @JoinColumn(name = "user_id", referencedColumnName = "id")
+    private User user;
 }
